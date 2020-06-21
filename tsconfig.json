@@ -1,9 +1,10 @@
 {
     "compilerOptions": {
-
+        "rootDir": "./",
+        "outDir": "./dist"
     },
     "files": [
         "index.ts",
-        "lib/**/*"
+        "./lib/**/*"
     ]
 }

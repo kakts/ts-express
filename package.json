@@ -12,6 +12,6 @@
     "tsc-ver": "tsc -v",
     "tsbuild": "tsc index.ts",
     "ts-node": "ts-node index.ts",
-    "start": "node index.js"
+    "start": "node dist/index.js"
   }
 }
