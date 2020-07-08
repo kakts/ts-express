@@ -1,16 +1,17 @@
 import * as express from 'express'
 import "reflect-metadata"
-import {createExpressServer} from "routing-controllers"
-import {UserController} from './controllers/user'
+import * as rCon from "routing-controllers"
+// import {UserController} from './controllers/user'
+import {UserController} from "./controllers/user"
 
-import * as middlewares from './middlewares'
+// import * as middlewares from './middlewares'
 
 // expressアプリを作成、全てのコントローラールートを登録し、express appインスタンスを取得する
-const app: express.Express = createExpressServer({
+const app: express.Express = rCon.createExpressServer({
     controllers: [UserController]
 })
 
-app.use(middlewares.setCORS)
+// app.use(middlewares.setCORS)
 
 app.use(express.json())
 

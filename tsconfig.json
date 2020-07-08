@@ -6,13 +6,14 @@
             "node",
             "mocha"
         ],
-        "target": "ES2016",
+        "module": "CommonJS",
+        "target": "ES5",
         "declaration": true,
         "declarationMap": true,
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "allowJs": true,
+        "allowJs": false,
         "moduleResolution": "node"
     },
     "files": [

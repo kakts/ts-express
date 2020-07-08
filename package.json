@@ -1,5 +1,5 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "body-parser": "^1.19.0",
     "class-transformer": "^0.2.3",

@@ -1,5 +1,5 @@
 import {Controller, Param, Body, Get, Post, Put, Delete} from "routing-controllers"
-
+import "reflect-metadata"
 @Controller()
 export class UserController {
 
