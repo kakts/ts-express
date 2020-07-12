@@ -1,0 +1,6 @@
+version: '3'
+services:
+  mongod:
+    image: "mongo:4.2.8"
+    ports:
+      - "27017:27017"
