@@ -3,6 +3,7 @@ import "reflect-metadata"
 import * as rCon from "routing-controllers"
 // import {UserController} from './controllers/user'
 import {UserController} from "./controllers/user"
+import {BookController} from "./controllers/book"
 
 // TODO 分離する
 import * as mongoose from 'mongoose'
@@ -14,7 +15,7 @@ const db = 'test'
 
 // expressアプリを作成、全てのコントローラールートを登録し、express appインスタンスを取得する
 const app: express.Express = rCon.createExpressServer({
-    controllers: [UserController]
+    controllers: [UserController, BookController]
 })
 
 function setupMongo(uris: string): void {
